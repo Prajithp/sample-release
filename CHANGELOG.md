@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.1](https://github.com/Prajithp/sample-release/compare/v1.4.0...v1.4.1) (2025-05-05)
+
+
+### 🧹 Chores
+
+* fix actions ([ed0c7cd](https://github.com/Prajithp/sample-release/commit/ed0c7cdc1bc282375eb18b3db5ff65ad97fa41d4))
+
 ## [1.4.0](https://github.com/Prajithp/sample-release/compare/v1.3.0...v1.4.0) (2025-05-05)
 
 
