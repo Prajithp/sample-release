@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.0](https://github.com/Prajithp/sample-release/compare/v1.2.0...v1.3.0) (2025-05-05)
+
+
+### 🌟 Features
+
+* add function to say hi ([19d9222](https://github.com/Prajithp/sample-release/commit/19d9222f9c99bea275b703af22841e645fac042b))
+* add function to say hi ([2574cf5](https://github.com/Prajithp/sample-release/commit/2574cf560d2583b1a9367ddf076535f8f19ef761))
+
 ## [1.2.0](https://github.com/Prajithp/sample-release/compare/v1.1.0...v1.2.0) (2025-05-05)
 
 
