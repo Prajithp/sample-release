@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/Prajithp/sample-release/compare/v1.3.0...v1.4.0) (2025-05-05)
+
+
+### 🌟 Features
+
+* try with release branch ([5277b16](https://github.com/Prajithp/sample-release/commit/5277b16cac2cc42a3b203fe820f4f24d5af5e0ad))
+
 ## [1.3.0](https://github.com/Prajithp/sample-release/compare/v1.2.0...v1.3.0) (2025-05-05)
 
 
