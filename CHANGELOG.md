@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.3](https://github.com/Prajithp/sample-release/compare/v1.4.2...v1.4.3) (2025-05-09)
+
+
+### 🧹 Chores
+
+* **action:** add workflow ([d4f267d](https://github.com/Prajithp/sample-release/commit/d4f267d0d220ac85840c39b00628c6729ccc6ee1))
+
 ## [1.4.2](https://github.com/Prajithp/sample-release/compare/v1.4.1...v1.4.2) (2025-05-06)
 
 
