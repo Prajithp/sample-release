@@ -1,0 +1,16 @@
+name: "Devspace Pull-Request automation"
+run-name: "devspace Pull-Request automation - ${{ github.event.client_payload.run_id}}"
+
+on:
+  repository_dispatch:
+    types: [devspace_build]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        ref: ${{ github.event.client_payload.ref }}
+      - name: wait for build
+        run: sleep 600
