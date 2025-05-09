@@ -11,6 +11,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        ref: ${{ github.event.client_payload.ref }}
+        with:
+          ref: ${{ github.event.client_payload.ref }}
       - name: wait for build
         run: sleep 600
