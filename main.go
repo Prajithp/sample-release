@@ -4,7 +4,7 @@ func SayHello(name string) string {
 	return "Hello " + name
 }
 
-// say this when someone calls wthis func test
+// say this when someone calls wthis func tests
 func SayHelloWithAge(name string) string {
 	return "Hello " + name
 }
