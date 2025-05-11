@@ -1,5 +1,5 @@
-name: "Devspace Pull-Request automation"
-run-name: "devspace Pull-Request automation - ${{ github.event.client_payload.uuid}}"
+ name: "Devspace Pull-Request automation"
+run-name: "devspace Pull-Request automation - ${{ github.event.client_payload.uuid }}"
 
 on:
   repository_dispatch:
