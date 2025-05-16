@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.4.5](https://github.com/Prajithp/sample-release/compare/v1.4.4...v1.4.5) (2025-05-16)
+
+
+### 🧹 Chores
+
+* fix module path ([222990a](https://github.com/Prajithp/sample-release/commit/222990a34f844d1c1486be049bb7e54e3fbee560))
+* fix module path ([c043b29](https://github.com/Prajithp/sample-release/commit/c043b2952bc014dcc205b175e81ec70cece562b6))
+* fix module path ([19ca3f3](https://github.com/Prajithp/sample-release/commit/19ca3f3a9792f7b9f38fee5b9a3febdc6df02ee3))
+
 ## [1.4.4](https://github.com/Prajithp/sample-release/compare/v1.4.3...v1.4.4) (2025-05-09)
 
 
