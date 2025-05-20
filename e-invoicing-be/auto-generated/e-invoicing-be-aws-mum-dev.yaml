@@ -1,0 +1,42 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: e-invoicing-be-aws-mum-dev
+  namespace: argocd
+spec:
+  generators:
+  - list:
+      elements:
+      - app: einvoicingbe-dev-bulk-http
+      - app: einvoicingbe-dev-consolidator
+      - app: einvoicingbe-dev-consumer
+      - app: einvoicingbe-dev-consumerlarge
+      - app: einvoicingbe-dev-http
+      - app: einvoicingbe-dev-workerconsumer
+  template:
+    metadata:
+      finalizers:
+      - resources-finalizer.argocd.argoproj.io
+      name: '{{app}}'
+    spec:
+      destination:
+        namespace: einvoicing
+        server: https://kubernetes.default.svc
+      project: default
+      sources:
+      - chart: whoami
+        helm:
+          releaseName: '{{app}}'
+          valueFiles:
+          - $values/e-invoicing-be/{{app}}/generated/values.yaml
+        repoURL: https://cowboysysop.github.io/charts/
+        targetRevision: 5.3.0
+      - ref: values
+        repoURL: https://github.com/Prajithp/sample-release.git
+        targetRevision: main
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: false
+        syncOptions:
+        - CreateNamespace=true
