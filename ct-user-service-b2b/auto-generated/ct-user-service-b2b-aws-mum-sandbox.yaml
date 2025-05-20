@@ -1,0 +1,37 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: ct-user-service-b2b-aws-mum-sandbox
+  namespace: argocd
+spec:
+  generators:
+  - list:
+      elements:
+      - app: userservice-b2b-sandbox-http
+  template:
+    metadata:
+      finalizers:
+      - resources-finalizer.argocd.argoproj.io
+      name: '{{app}}'
+    spec:
+      destination:
+        namespace: infra
+        server: https://kubernetes.default.svc
+      project: default
+      sources:
+      - chart: whoami
+        helm:
+          releaseName: '{{app}}'
+          valueFiles:
+          - $values/ct-user-service-b2b/{{app}}/generated/values.yaml
+        repoURL: https://cowboysysop.github.io/charts/
+        targetRevision: 5.3.0
+      - ref: values
+        repoURL: https://github.com/Prajithp/sample-release.git
+        targetRevision: main
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: false
+        syncOptions:
+        - CreateNamespace=true
