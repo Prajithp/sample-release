@@ -26,6 +26,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     environment: qa
+    needs: ["build"]
     steps:
       - name: Dump GitHub context
         env:
