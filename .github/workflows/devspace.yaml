@@ -2,12 +2,14 @@ name: "Devspace Pull-Request automation"
 run-name: "devspace Pull-Request automation - ${{ github.event.client_payload.uuid }}"
 
 on:
+  workflow_dispatch:
   repository_dispatch:
     types: [devspace_build]
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment: dev
     steps:
       - name: Dump GitHub context
         env:
