@@ -1,1 +1,1 @@
-# sample-release - doc
+# sample-release
