@@ -25,7 +25,10 @@ jobs:
     
   deploy:
     runs-on: ubuntu-latest
-    environment: qa
+    strategy:
+      matrix:
+        include: [{"region":"aws-mum", "env":"dev"}, {"region":"aws-mum", "env":"qa"}]
+    environment: ${{ matrix.region }}-${{ matrix.env }}
     needs: ["build"]
     steps:
       - name: Dump GitHub context
