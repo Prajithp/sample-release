@@ -25,6 +25,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         include: [{"region":"aws-mum", "env":"dev"}, {"region":"aws-mum", "env":"qa"}]
     environment: ${{ matrix.region }}-${{ matrix.env }}
