@@ -4,4 +4,4 @@ notifications:
       channels: 
         - "#argocd-notifications"
       mention_users:
-        - "@prajith"
+        - "prajith.palakkuda@clear.in"
