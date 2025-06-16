@@ -1,0 +1,7 @@
+notifications:
+  on_deployment_status:
+    slack:
+      channels: 
+        - "#argocd-notifications"
+      mention_users:
+        - "@prajith"
