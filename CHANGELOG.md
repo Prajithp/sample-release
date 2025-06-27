@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.4.6](https://github.com/Prajithp/sample-release/compare/v1.4.5...v1.4.6) (2025-06-27)
+
+
+### 🩹 Fixes
+
+* document ([c4b197f](https://github.com/Prajithp/sample-release/commit/c4b197f20bfa762772264604e1ffcedf5c570f01))
+* pipeline ([d413095](https://github.com/Prajithp/sample-release/commit/d41309511a415d6f13a20b6400ada767c785a765))
+* Update doc ([56a7bba](https://github.com/Prajithp/sample-release/commit/56a7bba777a5900d6df105bbbbf16f60df02fab3))
+
 ## [1.4.5](https://github.com/Prajithp/sample-release/compare/v1.4.4...v1.4.5) (2025-06-06)
 
 
